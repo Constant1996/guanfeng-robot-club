@@ -7,36 +7,41 @@ export const navItems = [
   { label: '加入战队', href: '#/join' },
 ];
 
+export function assetPath(path: string) {
+  return `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+}
+
 export const visualAssets = {
-  heroRobot: '/assets/robots/hero-current-product.png',
-  robotChassis: '/assets/robots/robot-chassis-detail.png',
+  landingBackground: assetPath('/assets/landing/steelsoul-landing-background-blur.png'),
+  heroRobot: assetPath('/assets/robots/hero-current-product.png'),
+  robotChassis: assetPath('/assets/robots/robot-chassis-detail.png'),
   rankingRobots: [
-    '/assets/robots/weekly-top-robot-1.jpg',
-    '/assets/robots/weekly-top-robot-2.jpg',
-    '/assets/robots/weekly-top-robot-3.jpg',
+    assetPath('/assets/robots/weekly-top-robot-1.jpg'),
+    assetPath('/assets/robots/weekly-top-robot-2.jpg'),
+    assetPath('/assets/robots/weekly-top-robot-3.jpg'),
   ],
   community: {
-    eventCloseup: '/assets/community/event-closeup.png',
-    clubTraining: '/assets/community/club-training.png',
-    workshopGuidance: '/assets/community/workshop-guidance.png',
-    garageParts: '/assets/community/garage-parts.png',
-    eventArenaWide: '/assets/community/event-arena-wide.png',
-    rewardsKit: '/assets/community/rewards-kit.png',
-    portalArena: '/assets/community/portal-arena.png',
-    portalJoin: '/assets/community/portal-join.png',
-    portalGarage: '/assets/community/portal-garage.png',
-    portalRanking: '/assets/community/portal-ranking.png',
-    battleKits: '/assets/community/battle-kits.png',
-    matchTraining: '/assets/community/match-training-1v1.png',
-    matchFlipper: '/assets/community/match-flipper-challenge.png',
-    trainingGuidance: '/assets/community/training-guidance.png',
+    eventCloseup: assetPath('/assets/community/event-closeup.png'),
+    clubTraining: assetPath('/assets/community/club-training.png'),
+    workshopGuidance: assetPath('/assets/community/workshop-guidance.png'),
+    garageParts: assetPath('/assets/community/garage-parts.png'),
+    eventArenaWide: assetPath('/assets/community/event-arena-wide.png'),
+    rewardsKit: assetPath('/assets/community/rewards-kit.png'),
+    portalArena: assetPath('/assets/community/portal-arena.png'),
+    portalJoin: assetPath('/assets/community/portal-join.png'),
+    portalGarage: assetPath('/assets/community/portal-garage.png'),
+    portalRanking: assetPath('/assets/community/portal-ranking.png'),
+    battleKits: assetPath('/assets/community/battle-kits.png'),
+    matchTraining: assetPath('/assets/community/match-training-1v1.png'),
+    matchFlipper: assetPath('/assets/community/match-flipper-challenge.png'),
+    trainingGuidance: assetPath('/assets/community/training-guidance.png'),
   },
   manual: {
-    partsChecklist: '/assets/manual/parts-checklist.png',
-    assemblySteps: '/assets/manual/assembly-steps.png',
-    remoteControl: '/assets/manual/remote-control.png',
-    batterySafety: '/assets/manual/battery-safety.png',
-    battleRules: '/assets/manual/battle-rules.png',
+    partsChecklist: assetPath('/assets/manual/parts-checklist.png'),
+    assemblySteps: assetPath('/assets/manual/assembly-steps.png'),
+    remoteControl: assetPath('/assets/manual/remote-control.png'),
+    batterySafety: assetPath('/assets/manual/battery-safety.png'),
+    battleRules: assetPath('/assets/manual/battle-rules.png'),
   },
 };
 

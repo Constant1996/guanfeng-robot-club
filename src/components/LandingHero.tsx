@@ -1,4 +1,4 @@
-import { arenaStats, events } from '../data/site';
+import { arenaStats, events, visualAssets } from '../data/site';
 
 const featuredEvent = events[0];
 
@@ -8,9 +8,9 @@ export function LandingHero() {
       {/* Full-screen blurred arena background with readable text overlay zones */}
       <div className="absolute inset-0 overflow-hidden bg-steel-black">
         <picture className="pointer-events-none block h-full w-full">
-          <source media="(min-width: 1024px)" srcSet="/assets/landing/steelsoul-landing-background-blur.png" />
+          <source media="(min-width: 1024px)" srcSet={visualAssets.landingBackground} />
           <img
-            src="/assets/landing/steelsoul-landing-background-blur.png"
+            src={visualAssets.landingBackground}
             alt=""
             aria-hidden="true"
             className="h-full w-full object-cover object-[70%_center] opacity-95 sm:object-[65%_center] lg:object-right"
